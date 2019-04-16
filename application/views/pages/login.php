@@ -11,9 +11,10 @@
   <p>
   <?php echo form_password('senha','','placeholder="Senha"'); ?>  
   </p>
+  <p><small>Novo Usuário? Clique no menu Cadastros para cadastrar um novo acesso!</small></p>
   <small>
     <?php 
-      $url = base_url().'login_controller/recupera_senha';      
+      $url = base_url().'Login_Controller/recupera_senha';      
       echo form_label('<a href="'.$url.'">Esqueceu a senha?</a>','recupera_senha'); 
     ?>
   </small>
